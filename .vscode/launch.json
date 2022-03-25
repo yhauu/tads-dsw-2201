@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ExemplosSpringmvcApplication<exemplos-springmvc>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.senac.tads.dsw.exemplosspringmvc.ExemplosSpringmvcApplication",
+            "projectName": "exemplos-springmvc",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

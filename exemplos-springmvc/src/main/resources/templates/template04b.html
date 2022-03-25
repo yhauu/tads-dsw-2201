@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplos Spring - Exemplo 04</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Exemplo 04 - Resultado Soma via form</h1>
+        <form>
+            <label for="n1">N1</label>
+            <input type="number" id="n1" name="n1" th:value="${param.n1}"> +
+
+            <label for="n2">N2</label>
+            <input type="number" id="n2" name="n2" th:value="${param.n2}"> =
+
+            <button type="submit">Somar</button>
+
+            <span th:text="${resultado}"></span>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplos Spring - Exemplo 07</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div th:if="dadosPessoais != null">
+            <h1>Exemplo 08</h1>
+            <p>Nome: <span th:text="${dadosPessoais.nome}"></span></p>
+            <p>Data Nascimento: <span th:text="${dadosPessoais.dataNascimento}"></span></p>
+            <p>Idade: <span th:text="${dadosPessoais.idade}"></span></p>
+            <p>E-mail: <span th:text="${dadosPessoais.email}"></span></p>
+            <p>Senha: <span th:text="${dadosPessoais.senha}"></span></p>
+        </div>
+
+        <div th:if="dadosPessoais == null">
+            <p>Pessoa não encontrada!</p>
+        </div>
+    </body>
+</html>

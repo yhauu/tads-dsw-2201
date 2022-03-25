@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplos Spring - Exemplo 03</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Exemplo 03</h1>
+        <div th:if="${flagMensagem == true}" style="background-color: aquamarine; font-size: 1.5rem; padding: 10px;">
+            <h2>Mensagem que pode ou não ser apresentada</h2>
+        </div>
+        <p th:each="valor : ${lista}" th:text="${valor}"></p>
+    </body>
+</html>
